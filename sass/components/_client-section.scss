@@ -1,0 +1,25 @@
+
+
+.client-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+
+    transition: color var(--transform-animation),
+        border-color var(--transform-animation);
+
+    &:hover,
+    &:focus {
+        border-color: #2196f3;
+        color: #2196f3;
+         }
+}
+
+.client-icon {
+    fill: currentColor;
+}

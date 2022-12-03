@@ -1,0 +1,41 @@
+
+
+.title-section {
+    padding-top: 0;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-content-h2-h3-logo);
+
+    margin-bottom: 50px;
+}
+
+.title-img {
+    display: flex;
+    padding-left: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}

@@ -19,14 +19,19 @@
 }
 
 .poster {
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: calc(60 / 44);
+    line-height: calc(42/26);
     letter-spacing: 0.06em;
     color: #ffffff;
     text-transform: uppercase;
     align-items: center;
     margin-bottom: 30px;
+
+@media screen and (min-width: 1200px) {
+        font-size:44px;
+        line-height: calc(60 / 44);
+    }
 }
 
 .main__button {
@@ -52,19 +57,56 @@
 }
 
 .main__section {
+    padding-left: 0;
+   
+
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    }
+@media screen and(min-width: 1200px) {
     display: flex;
     padding-left: 0;
+   }
 }
+
+@media screen and (max-width: 1199px){
+
+    .main__list {
+        width: 100%;
+        margin-right: 30px;}
+
+    .main__list {
+        flex-basis: calc(( 100% - 30px * 1) / 2);
+        }
+
+    .main__list:nth-last-child( -n + 2){
+        margin-bottom: 0;
+        }
+    
+    .main__list:nth-child(2n) {
+        margin-right: 0;
+        }
+}
+
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
+
+ @media screen and (min-width: 768px){
+        width: 354px;
+        top: 540px;
+        }
+@media screen and (min-width: 1200px) {
+        width: 270px;
+     }
 }
 
 .main__content {
@@ -77,6 +119,18 @@
 
     width: 270px;
     padding-bottom: 10px;
+
+    text-align: center;
+    margin: auto;
+
+@media screen and (min-width: 768px){
+    margin: 0;
+    text-align: justify;
+    }
+@media screen and (min-width: 1200px) {
+    margin: 0;
+    text-align:justify;
+}
 }
 
 .main__features {
@@ -85,6 +139,17 @@
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--color-port-subtitle-p);
+    width: 450px;
+    height: 50px;
+
+@media screen and (min-width: 768px){
+    width: 354px;
+    height: 48px;
+    }
+   
+@media screen and (min-width: 1200px){
     width: 270px;
     height: 72px;
+}
+       
 }

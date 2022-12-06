@@ -17,8 +17,14 @@
 }
 
 .header-nav__item {
-    display: none;
-    // margin-right: 50px;
+
+@media screen and (max-width: 767px) {
+        display: none;
+    }
+
+@media screen and (min-width: 1200px){
+        margin-right: 50px;
+    }
 }
 .header-nav .header-nav__item:last-child {
     margin-right: 0;
@@ -80,12 +86,11 @@
     border-bottom: 1px solid #ececec;
 }
 
-.header-info {
+.header-info{
     display: none;
-
-//     margin-left: auto;
-// 
+    margin-left: auto;
 }
+
 
 .header-info__email {
     font-weight: 500;
@@ -100,6 +105,9 @@
     &:hover,
     &:focus {
         color: var(--color-main-button-footer);
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
     }
 }
 

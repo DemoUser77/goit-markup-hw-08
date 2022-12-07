@@ -25,8 +25,8 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
 
     background-color: #ffffff;
@@ -35,6 +35,15 @@
     border-radius: 4px;
     transition: transform var(--transform-animation),
         opacity var(--transform-animation);
+
+
+        @media screen and (min-width: 768px){
+            top: 80%;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+    }
 }
 
 .modal.modal-animation {

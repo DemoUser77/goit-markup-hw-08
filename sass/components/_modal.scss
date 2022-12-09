@@ -36,11 +36,6 @@
     transition: transform var(--transform-animation),
         opacity var(--transform-animation);
 
-
-    @media screen and (min-width: 632px){
-            top: 10px;
-            transform:translateX(-50%);
-        }
     @media screen and (min-width: 1199px) {
             min-width: 528px;
             min-height: 581px;

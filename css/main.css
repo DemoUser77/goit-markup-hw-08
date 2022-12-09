@@ -1070,13 +1070,6 @@ img {
   transition: transform var(--transform-animation), opacity var(--transform-animation);
   transition: transform var(--transform-animation), opacity var(--transform-animation), -webkit-transform var(--transform-animation);
 }
-@media screen and (min-width: 632px) {
-  .modal {
-    top: 10px;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
 @media screen and (min-width: 1199px) {
   .modal {
     min-width: 528px;

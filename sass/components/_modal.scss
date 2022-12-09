@@ -37,12 +37,13 @@
         opacity var(--transform-animation);
 
 
-        @media screen and (min-width: 768px){
-            top: 80%;
+    @media screen and (min-width: 632px){
+            top: 10px;
+            transform:translateX(-50%);
         }
-        @media screen and (min-width: 1200px) {
-            width: 528px;
-            height: 581px;
+    @media screen and (min-width: 1199px) {
+            min-width: 528px;
+            min-height: 581px;
     }
 }
 

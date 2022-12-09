@@ -82,8 +82,8 @@
       </section>
       <section class="section">
         <div class="container">
-          <ul class="main__section">
-            <li class="main__list list">
+          <ul class="main__section card-set">
+            <li class="main__list list card-set__item">
               <div class="content">
                 <svg class="main__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-antenna"></use>
@@ -95,7 +95,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="main__list list">
+            <li class="main__list list card-set__item">
               <div class="content">
                 <svg class="main__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-clock"></use>
@@ -107,7 +107,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="main__list list">
+            <li class="main__list list card-set__item">
               <div class="content">
                 <svg class="main__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-diagram"></use>
@@ -118,7 +118,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="main__list list">
+            <li class="main__list list card-set__item">
               <div class="content">
                 <svg class="main__icon" width="70" height="70">
                   <use href="./img/icons.svg#icon-astronaut"></use>
@@ -139,19 +139,40 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="title-img">
             <li class="list">
-              <img src="./img/img1.jpg" alt="робота" width="370" height="294" />
+              <img
+                src="./img/img1.jpg"
+                srcset="./img/title/img1_ld@1x.jpg, ./img/title/img1_ld@2x.jpg"
+                alt="робота"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay-text">Десктопні додатки</p>
               </div>
             </li>
             <li class="list">
-              <img src="./img/img2.jpg" alt="робота" width="370" height="294" />
+              <img
+                src="./img/img2.jpg"
+                srcset="./img/title/img2_ld@1x.jpg, ./img/title/img2_ld@2x.jpg"
+                alt="робота"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay-text">Мобільні додатки</p>
               </div>
             </li>
             <li class="list">
-              <img src="./img/img3.jpg" alt="робота" width="370" height="294" />
+              <img
+                src="./img/img3.jpg"
+                srcset="./img/title/img3_ld@1x.jpg, ./img/title/img3_ld@2x.jpg"
+                alt="робота"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <div class="overlay">
                 <p class="overlay-text">Дизайнерські рішення</p>
               </div>
@@ -163,13 +184,42 @@
       <section class="team-section section">
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="title-img">
-            <li class="list title-img__shadow">
+          <ul class="title-img card-set">
+            <li class="list title-img__shadow card-set__item">
+              <picture>
+                <!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img1_ld@1x.jpg 1x,
+                    ./img/team/img1_ld@2x.jpg 2x
+                  "
+                />
+                <!--Tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img1_md@1x.jpg 1x,
+                    ./img/team/img1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!--Mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img1_sm@1x.jpg 1x,
+                    ./img/team/img1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+              </picture>
               <img
-                src="./img/teamimg1.jpg"
+                src="./img/team/img1_sm@1x.jpg"
                 alt="команда"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
               <div class="team-name">
                 <h3 class="heading">Ігор Дем'яненко</h3>
@@ -230,12 +280,39 @@
                 </ul>
               </div>
             </li>
-            <li class="list title-img__shadow">
+            <li class="list title-img__shadow card-set__item">
+              <picture>
+                <!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img2_ld@1x.jpg 1x,
+                    ./img/team/img2_ld@2x.jpg 2x
+                  "
+                />
+                <!--Tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img2_md@1x.jpg 1x,
+                    ./img/team/img2_md@2x.jpg 2x
+                  "
+                />
+                <!--Mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img2_sm@1x.jpg 1x,
+                    ./img/team/img2_sm@2x.jpg 2x
+                  "
+                />
+              </picture>
               <img
-                src="./img/teamimg2.jpg"
+                src="./img/team/img2_sm@1x.jpg"
                 alt="команда"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
               <div class="team-name">
                 <h3 class="heading">Ольга Рєпіна</h3>
@@ -296,12 +373,39 @@
                 </ul>
               </div>
             </li>
-            <li class="list title-img__shadow">
+            <li class="list title-img__shadow card-set__item">
+              <picture>
+                <!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img3_ld@1x.jpg 1x,
+                    ./img/team/img3_ld@2x.jpg 2x
+                  "
+                />
+                <!--Tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img3_md@1x.jpg 1x,
+                    ./img/team/img3_md@2x.jpg 2x
+                  "
+                />
+                <!--Mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img3_sm@1x.jpg 1x,
+                    ./img/team/img3_sm@2x.jpg 2x
+                  "
+                />
+              </picture>
               <img
-                src="./img/teamimg3.jpg"
+                src="./img/team/img3_sm@1x.jpg"
                 alt="команда"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
               <div class="team-name">
                 <h3 class="heading">Микола Тарасов</h3>
@@ -362,12 +466,39 @@
                 </ul>
               </div>
             </li>
-            <li class="list title-img__shadow">
+            <li class="list title-img__shadow card-set__item">
+              <picture>
+                <!--Desktop screen-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/img4_ld@1x.jpg 1x,
+                    ./img/team/img4_ld@2x.jpg 2x
+                  "
+                />
+                <!--Tablet screen-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/img4_md@1x.jpg 1x,
+                    ./img/team/img4_md@2x.jpg 2x
+                  "
+                />
+                <!--Mobile screen-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team/img4_sm@1x.jpg 1x,
+                    ./img/team/img4_sm@2x.jpg 2x
+                  "
+                />
+              </picture>
               <img
-                src="./img/teamimg4.jpg"
+                src="./img/team/img4_sm@1x.jpg"
                 alt="команда"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
+                loading="lazy"
               />
               <div class="team-name">
                 <h3 class="heading">Михайло Єрмаков</h3>
@@ -434,43 +565,43 @@
       <section class="section">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
-          <ul class="client-list">
-            <li class="client-list__item list">
+          <ul class="client-list card-set">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item list">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item list">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item list">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item list">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-list__item list">
+            <li class="client-list__item list card-set__item">
               <a class="client-cont" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./img/icons.svg#icon-Logo6"></use>
@@ -680,7 +811,7 @@
         </li>
       </ul>
     </div>
-
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
     <script
       defer
@@ -688,6 +819,5 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

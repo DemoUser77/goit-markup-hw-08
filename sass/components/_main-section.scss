@@ -6,7 +6,7 @@
     // padding-right: 15px;
     text-align: center;
     
-    background-repeat: no-repeat;
+background-repeat: no-repeat;
 background-color: rgba(47, 48, 58, 0.4);
 background-position: center;
 background-size: cover;
@@ -17,10 +17,7 @@ background-size: cover;
         padding-top: 118px;
         padding-bottom: 118px;
     
-            // background-color: rgba(47, 48, 58, 0.4);
-            // background-position: center;
-            // background-size: cover;
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../img/hero/header_sm@1x.jpg);
     
 @media (min-device-pixel-ratio: 2),
@@ -106,6 +103,11 @@ background-size: cover;
 .main__section {
     padding-left: 0;
    --items: 1;
+   gap: 30px;
+
+@media screen and (max-width: 479px) {
+        width: 100%;
+    }
 
 @media screen and (min-width: 768px) {
     --items: 2;
@@ -114,15 +116,26 @@ background-size: cover;
     display: flex;
     flex-wrap: nowrap;
     --items: 4;
+}
+@media screen  and (max-width: 1199px){
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+}
+.main__list{
 
-   }
+    @media screen and (max-width: 479px) {
+            width: 100%;
+        }
 }
 
 .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    
+    width: 100%;
     height: 120px;
     background: #f5f4fa;
     border-radius: 4px;
@@ -167,7 +180,7 @@ background-size: cover;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--color-port-subtitle-p);
-    width: 450px;
+    
     height: 50px;
 
 @media screen and (min-width: 768px){

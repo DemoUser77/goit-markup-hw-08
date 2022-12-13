@@ -1,8 +1,14 @@
-.card-set{
+.card-set {
     display: flex;
     flex-wrap: wrap;
     gap: var(--ident);
+
+@media screen and(min-width: 1200px) {
+    .card-set {
+   flex-wrap: nowrap;
+    }
 }
-.card-set__item{
-flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
+.card-set__item {
+flex-basis: calc((100% - var(--ident)*(var(--items) - 1)) / (var(--items)));
 }

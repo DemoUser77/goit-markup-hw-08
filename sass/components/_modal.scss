@@ -201,11 +201,15 @@
 }
 
 .modal-form-agreement-desc {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
     user-select: none;
+
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+    }
 }
 
 .modal-form-agreement-link {
